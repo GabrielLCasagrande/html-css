@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/gabriel.ico" type="image/x-icon"> <!-- para criar favicon é só digitar link e selecionar favicon-->
+    <title>Primeiro exercício</title>
+  </head>
+  <body>
+    <h1>Olá, Mundo!</h1> <!-- h1 vai até no máximo h6, mas sempre seguindo a ordem crescente por conta da semantica-->
+    <hr />
+    <p>
+      Esse é o meu primeiro documento HTML, para demonstramos um paragrafo
+      usamos &lt;/p&gt; dessa forma ele aparece no Google como se fosse um maior
+      ou menor <br />Quebra de linha é br
+    </p>
+
+    <p>
+      Vamos adicionar alguns símbolos: <br>
+      &reg; &copy; &trade; &euro; &pound; &yen;
+      &cent; &Delta; &uparrow;
+    </p>
+
+    <p>
+      Vamos adicionar alguns emojis 
+   <br>&#x2705; &#x1F9DF <!--Todo código com emoji tem que começar com &#x e o número do emoji-->
+    </p>
+
+
+
+    <P>
+      para negrito usamos a tag <strong>strong</strong>
+    </P>
+
+    <p>
+      já para <em>itálico usamos EM</em>
+    </p>
+
+    <p>
+      podemos também marcar um texto usando a tag MARK, 
+      <mark style="background-color: chartreuse;">como esse exemplo</mark>
+    </p>
+
+    <p>
+      Podemos criar também um texto excluído usando DEL, ele irá <del>RISCAR</del> o texto
+    </p>
+    
+    <p>
+      Também podemos criar contas como x<sup>20</sup> onde o 20 ficará elevado e H<sub>2</sub>O onde o 2 ficará embaixo, usando a tag sup e sub.
+    </p>
+
+
+    <H2>Código fonte/pré-formatação</H2>
+    <p>
+      quando selecionamos uma letra o espaçamento é diferente, para isso usado a tag code, dando o mesmo espaçamento entre as letras, EX:
+    </p>
+    <p>
+      <code>
+        A um tempo atrás havia mais árvores
+      </code>
+    </p>
+
+    <p>Já a formatação serve para conseguimos alinhar o código sem usarmos tag P, assim o código fica formatado</p>
+
+    <pre>
+      <code>
+  function getGrades() {
+    var args = Array.prototype.slice.call(arguments, 1, 3);
+    return args;
+  }
+      </code>
+    </pre>
+
+    <h2>Citações</h2>
+    <p>
+      Como diria o pai de um amigo, <q>o computador é um burro muito rápido.</q> <!-- Usamos Q no lugar de aspas para citações-->
+    </p>
+
+    <h2>
+      Citações completas
+    </h2>
+    <p>
+      Segundo a microsoft:
+    </p>
+    <blockquote cite="www.facebook.com.br"> <!--Ela vai deslocar a frase um pouco para o lado
+    Podemos usar cite para citar e manter os direitos da pessoa, além de ajudar nas buscas-->
+      A internet vem mudando muito o Mundo
+      dessa forma iremos avançar demais
+      na ciência
+    </blockquote>
+    <!-- Em relação as imagens, Jpeg são imagens compactas onde a qualidade pode ser menor, já a png é com qualidade superior -->
+
+    <h2>Abreviações</h2> <!--Usado para quando o mouse passar por cima vermos o que está escrito-->
+    <p>
+      Estou estudadando <abbr title="HypertTextMarkupLanguage">HTML. </abbr>
+    </p>
+
+  <h2>Listas ordenadas</h2>
+    <ol type="1"> <!--Usamos type para escolher a forma da lista-->
+      <li>Acordar</li>
+      <li>Tomar Café</li>
+      <li>Escovar os dentes</li>
+    </ol>
+
+  <h2>Listas não ordenadas</h2>
+    <ul type="square"> <!-- Temos Disc, Circle e Square como forma da lista-->
+      <li>Pão</li>
+      <li>Manteiga</li>
+      <li>Feijão</li>
+      <li>Tomate</li>
+    </ul>
+
+  <h2>Juntando listas 1.0</h2>
+    <ol>
+      <li>Antigas</li>
+      <ol type="a"> 
+      <li>Sertanejo raiz</li>
+      <li>Música Antiga</li>
+      <li>Funk Antigo</li>
+      </ol>
+      <li>Novas</li>
+      <ol type="a">
+        <li>Funk</li>
+        <li>Rock</li>
+        <li>Pop</li>
+      </ol>
+    </ol>
+
+  <h2>Jogos Favoritos</h2> <!-- Dessa Forma criamos uma lista de 3 níveis -->
+    <ol>
+      <li>FarCry</li>
+      <ul>
+        <li>Farcry 5</li>
+        <ul>
+          <li>Focado em religião</li>
+        </ul>
+        <li>Farcry 4</li>
+        <ul>
+          <li>Focado em Guerra</li>
+        </ul>
+     </ul>
+      <li>Lol</li>
+      <ul>
+        <li>Aatrox</li>
+        <ul>
+          <li>Lutador Darkin</li>
+        </ul>
+        <li>Thresh</li>
+        <ul>
+          <li>Suporte Ilha das Sombras</li>
+        </ul>
+      </ul>
+    </ol>
+     
+  <h2>Lista de Definição</h2>
+   <dl>
+    <dt>Termo</dt>
+    <dd>Descrição</dd>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de estilo</dd>
+   </dl>
+   
+  <h2>Links Externos</h2>
+   <p>Para Acessar o <a href="https://www.youtube.com.br" target="_blank">youtube</a></p>
+   <!-- Usamos o target _blank para não sobrescrever nosso site-->
+
+  <h2>Links Internos</h2> <!-- Usamos rel para dar um valor e uma semântica para o elemento -->
+  <p>Essa é a primeira página, para irmos pra <a href="pag2.html" rel="next">segunda</a></p>
+  <p>Para a 3º <a href="Pag3/pag3.html">Página</a></p>
+
+  <h2>Links para download</h2>
+   <ul>
+    <li><a href="pastapdf/linkdownload.pdf" download="linkdownload.pdf" type="application/pdf">Baixar em pdf</a></li>
+    <li><a href="pastapdf/linkcompactado.zip" download="linkcompactado.zip" type="application/zip">Baixar compactado</a></li>
+   </ul>
+
+
+
+
+
+    <img src="images/computador.jpg" alt="Computador">  
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" alt="logo javascript"> <!-- também conseguimos puxar imagens da net copiando o endereço da imagem -->
+
+    <!-- apertando control+espaço eu seleciono o diretório
+    e control+ponto e virgula comentário -->
+
+  </body>
+</html>

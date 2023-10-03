@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div {
+  background-color: rgb(155, 153, 153);
+  text-align: center;
+  border:  1px solid black;
+  height: 200px;
+  width: 200px;
+  display: inline-block; /*alinha todas as divs em linha reta ao invés de uma embaixo da outra*/
+}
+
+/* : são uma pseudo-classe, relacionadas ao estado de um elemento, ativo, marcado, habilitado */
+
+div:hover /* quando passar o mouse por cima do elemento, ele ficará marcado, ativo, podendo mudar de cor, adicionar uma borda */
+{
+  background-color: rgb(250, 250, 93);
+}

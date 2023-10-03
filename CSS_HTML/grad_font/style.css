@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+  /*seletor global, tudo aqui dentro valerá para todos os elementos */
+  /* aqui colocamos fonte arial e helvetica pois em alguns celulares/tvs o arial não funciona, colocando assim 2 tipos de fonte */
+  font-family: Arial, Helvetica, sans-serif; /* Medidas Absolutas cm, mm, in, px, pt, pc */
+
+  font-size: 16px; /* Medidas Relativas em, ex, rem, vw, vh, %, geralmente 16px é um Em  */
+
+  /*
+  podemos usar também um shothand, no caso das fontes, usamos em, primeiro  o font-style -> font-weight -> font-size -> font-family   
+  exemplo
+  font: italic bolder em Arial, sans-serif;
+
+  Podemos também usar fontes do google fonts, colocando uma parte no html
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300&display=swap');
+</style>
+
+e no css colocamos
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+
+}
+
+body {
+  background-image: linear-gradient(to right, #ecd87e, #eceb83, #f0a70b);
+}
+
+h1 {
+  color: #f24405;
+  text-align: center;
+  text-shadow: 1px 1px 2px #c93904c0;
+}
+
+h2 {
+  color: #e7bf09;
+}
+
+p {
+  text-align: justify;
+  color: #043e96;
+}
+
+main {
+  /* colocamos main dentro do body, então tudo que estiver dentro do body, ficára dentro desse quadrado branco onde colocamos o fundo branco */
+  background-color: white;
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(153, 101, 3, 0.459);
+}
